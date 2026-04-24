@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portofolio resmi Kiietsuu — developer, desainer, dan kreator digital." />
+  <meta name="author" content="Kiietsuu" />
+  <meta name="theme-color" content="#0b0b12" />
+  <meta property="og:title" content="Kiietsuu — Portofolio" />
+  <meta property="og:description" content="Portofolio resmi Kiietsuu — developer, desainer, dan kreator digital." />
+  <meta property="og:type" content="website" />
+  <title>Kiietsuu — Portofolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a href="#top" class="nav__brand" aria-label="Kiietsuu">
+      <span class="nav__logo">K</span>
+      <span class="nav__name">Kiietsuu</span>
+    </a>
+    <nav class="nav__links" aria-label="Navigasi utama">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav__toggle" aria-label="Buka menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <p class="hero__eyebrow">
+        <span class="dot"></span> Available for collaboration
+      </p>
+      <h1 class="hero__title">
+        Hi, I'm <span class="gradient-text">Kiietsuu</span>.<br />
+        I build <span class="rotator" aria-live="polite"><span data-word>clean websites</span></span>.
+      </h1>
+      <p class="hero__lead">
+        Developer &amp; kreator digital yang fokus pada antarmuka yang cepat, rapi, dan menyenangkan untuk digunakan.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#projects">Lihat Proyek</a>
+        <a class="btn btn--ghost" href="#contact">Hubungi Saya</a>
+      </div>
+      <div class="hero__meta">
+        <div><strong>3+</strong><span>Tahun ngoprek</span></div>
+        <div><strong>20+</strong><span>Proyek selesai</span></div>
+        <div><strong>∞</strong><span>Cup of coffee</span></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="section__head">
+        <span class="section__tag">01 — About</span>
+        <h2>Tentang Saya</h2>
+      </div>
+      <div class="about">
+        <div class="about__card">
+          <p>
+            Halo! Saya <strong>Kiietsuu</strong>. Saya senang membangun hal-hal di web — dari landing page
+            yang nyaman dilihat sampai tools kecil yang bikin kerjaan sehari-hari lebih ringan.
+          </p>
+          <p>
+            Saya peduli pada detail: typography, spacing, motion, dan performa. Tujuan saya sederhana —
+            bikin produk yang <em>terasa enak</em> dipakai.
+          </p>
+          <ul class="about__list">
+            <li><span>📍</span> Indonesia</li>
+            <li><span>💼</span> Freelance &amp; kolaborasi terbuka</li>
+            <li><span>🎯</span> Fokus: Front-end, UI/UX, Bot &amp; Automation</li>
+          </ul>
+        </div>
+        <div class="about__visual" aria-hidden="true">
+          <div class="orb"></div>
+          <pre class="code-card"><code><span class="c-k">const</span> <span class="c-v">me</span> = {
+  name: <span class="c-s">"Kiietsuu"</span>,
+  role: <span class="c-s">"Developer &amp; Creator"</span>,
+  stack: [<span class="c-s">"HTML"</span>, <span class="c-s">"CSS"</span>, <span class="c-s">"JS"</span>, <span class="c-s">"Node"</span>],
+  vibe: <span class="c-s">"clean &amp; fast"</span>,
+};</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="section__head">
+        <span class="section__tag">02 — Skills</span>
+        <h2>Hal yang Saya Gunakan</h2>
+      </div>
+      <div class="skills">
+        <div class="skill"><span class="skill__icon">⚡</span><h3>Frontend</h3><p>HTML, CSS, JavaScript, React, Tailwind</p></div>
+        <div class="skill"><span class="skill__icon">🛠️</span><h3>Backend</h3><p>Node.js, Express, REST API, MongoDB</p></div>
+        <div class="skill"><span class="skill__icon">🎨</span><h3>Design</h3><p>Figma, UI/UX, Prototyping, Branding</p></div>
+        <div class="skill"><span class="skill__icon">🤖</span><h3>Automation</h3><p>Bots, Scripting, Workflows</p></div>
+        <div class="skill"><span class="skill__icon">📦</span><h3>Tooling</h3><p>Git, GitHub, VS Code, CI/CD</p></div>
+        <div class="skill"><span class="skill__icon">🚀</span><h3>Deploy</h3><p>Vercel, Netlify, Cloudflare</p></div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="section__head">
+        <span class="section__tag">03 — Projects</span>
+        <h2>Proyek Pilihan</h2>
+      </div>
+      <div class="projects">
+        <article class="project">
+          <div class="project__thumb" data-hue="270">
+            <span>Kii<br />Dash</span>
+          </div>
+          <div class="project__body">
+            <h3>Kii Dashboard</h3>
+            <p>Dashboard analitik minimalis dengan mode gelap default dan widget yang bisa disusun ulang.</p>
+            <div class="project__tags"><span>React</span><span>Chart.js</span><span>Tailwind</span></div>
+            <a class="project__link" href="#" aria-label="Lihat Kii Dashboard">Lihat →</a>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project__thumb" data-hue="200">
+            <span>Lumo<br />Bot</span>
+          </div>
+          <div class="project__body">
+            <h3>Lumo Bot</h3>
+            <p>Bot otomatis untuk mengelola komunitas: moderasi, welcome message, sampai reminder event.</p>
+            <div class="project__tags"><span>Node.js</span><span>Discord API</span></div>
+            <a class="project__link" href="#" aria-label="Lihat Lumo Bot">Lihat →</a>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project__thumb" data-hue="330">
+            <span>Nova<br />Store</span>
+          </div>
+          <div class="project__body">
+            <h3>Nova Store</h3>
+            <p>Storefront e-commerce cepat dengan cart persistant dan checkout yang ramah mobile.</p>
+            <div class="project__tags"><span>Next.js</span><span>Stripe</span></div>
+            <a class="project__link" href="#" aria-label="Lihat Nova Store">Lihat →</a>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project__thumb" data-hue="150">
+            <span>Zenith<br />CLI</span>
+          </div>
+          <div class="project__body">
+            <h3>Zenith CLI</h3>
+            <p>CLI kecil yang men-scaffold project web pribadi dengan preset styling favorit.</p>
+            <div class="project__tags"><span>Node.js</span><span>Commander</span></div>
+            <a class="project__link" href="#" aria-label="Lihat Zenith CLI">Lihat →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--contact" id="contact">
+      <div class="section__head">
+        <span class="section__tag">04 — Contact</span>
+        <h2>Ayo Ngobrol</h2>
+      </div>
+      <div class="contact">
+        <p class="contact__lead">
+          Punya ide, proyek, atau sekadar mau sapa? Saya selalu terbuka untuk obrolan menarik.
+        </p>
+        <div class="contact__actions">
+          <a class="btn btn--primary" href="mailto:hello@kiietsuu.dev">Kirim Email</a>
+          <div class="contact__socials">
+            <a href="#" aria-label="GitHub" title="GitHub">GH</a>
+            <a href="#" aria-label="Instagram" title="Instagram">IG</a>
+            <a href="#" aria-label="Twitter / X" title="X">X</a>
+            <a href="#" aria-label="Discord" title="Discord">DC</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Kiietsuu. Dibuat dengan ♡ dan sedikit kafein.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
